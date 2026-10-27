@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Syrah — open source</title>
+    <meta
+      name="description"
+      content="The tools Syrah builds for its own engagements, released in the open. An agentic attacker, not a scanner."
+    />
+    <meta name="theme-color" content="#0b0d12" />
+    <meta name="color-scheme" content="dark" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Syrah" />
+    <meta property="og:title" content="Syrah — open source" />
+    <meta
+      property="og:description"
+      content="The tools Syrah builds for its own engagements, released in the open. An agentic attacker, not a scanner."
+    />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" type="image/svg+xml" href="assets/img/syrah-mark.svg" />
+    <link
+      rel="preload"
+      href="assets/fonts/instrument-serif-400.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/instrument-sans-var.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/site.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-head">
+      <div class="container head-inner">
+        <a class="brand" href="#main" aria-label="Syrah open source, home">
+          <img class="brand-mark" src="assets/img/syrah-mark.svg" alt="" width="30" height="30" />
+          <span>Syrah</span>
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#tools">Tools</a>
+          <a href="#cases">Case studies</a>
+          <a href="https://github.com/syrah-oss">GitHub</a>
+          <a class="btn btn-sm btn-secondary" href="https://syrah.dev">syrah.dev</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero-copy">
+            <span class="eyebrow">Open source</span>
+            <h1>The tools we attack with.</h1>
+            <p class="lede">
+              Syrah runs an agentic attacker, not a scanner. What we build for an engagement is
+              useful beyond it, so the parts that stand on their own live here, in the open.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#tools">Explore the tools</a>
+              <a class="btn btn-secondary" href="#cases">Case studies</a>
+            </div>
+            <div class="hero-meta">
+              <span>Rust</span>
+              <span>TypeScript</span>
+              <span>MIT &amp; Apache-2.0</span>
+              <span>github.com/syrah-oss</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="tools">
+        <div class="container">
+          <span class="eyebrow">Tools</span>
+          <h2>Built for an engagement. Kept after it.</h2>
+          <p class="lede mt-4">
+            No wrappers around a scanner. Each of these does one job properly, on the hardware it
+            has to run on.
+          </p>
+
+          <div class="grid cols-2 tool-grid mt-6">
+            <article class="panel">
+              <div class="panel-head">
+                <h3 class="mb-0">wifikit</h3>
+                <span class="badge">MVP</span>
+              </div>
+              <p class="small muted">
+                WiFi pentesting toolkit for macOS and Linux. Scanner, ten attack engines, packet
+                capture and handshake export in a single binary — no kernel extensions, no VM.
+              </p>
+              <div class="tool-foot">
+                <div class="tags">
+                  <span class="tag">Rust</span>
+                  <span class="tag">MIT</span>
+                  <span class="tag">CLI</span>
+                </div>
+                <a class="tool-link" href="https://github.com/syrah-oss/wifikit">wifikit &nearr;</a>
+              </div>
+            </article>
+
+            <article class="panel">
+              <div class="panel-head">
+                <h3 class="mb-0">agentic-inbox</h3>
+                <span class="badge">Fork</span>
+              </div>
+              <p class="small muted">
+                A community fork of Cloudflare's self-hosted AI email client, kept working after
+                upstream went quiet. Live model defaults, envelope-based routing, MCP tools that
+                provision a mailbox on demand.
+              </p>
+              <div class="tool-foot">
+                <div class="tags">
+                  <span class="tag">TypeScript</span>
+                  <span class="tag">Apache-2.0</span>
+                  <span class="tag">Workers</span>
+                </div>
+                <a class="tool-link" href="https://github.com/syrah-oss/agentic-inbox"
+                  >agentic-inbox &nearr;</a
+                >
+              </div>
+            </article>
+          </div>
+
+          <p class="small muted mt-5 mb-0">
+            Issues and pull requests are welcome. Neither project is a supported product, and both
+            are for testing systems you own or are authorised to test.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="cases">
+        <div class="container">
+          <span class="eyebrow">Case studies</span>
+          <div class="between">
+            <h2 class="mb-0">Proof, once we are allowed to show it.</h2>
+            <span class="badge warn">coming soon</span>
+          </div>
+          <p class="lede mt-4">
+            Sanitised write-ups of authorised engagements: what was reachable, how the attacker got
+            there, and what closed it. Names, domains and data never appear.
+          </p>
+          <div class="grid cols-2 mt-6">
+            <div>
+              <hr class="rule" />
+              <h3 class="mt-4">What each study includes</h3>
+              <ul class="list-plain">
+                <li><span class="mark">—</span><span>The scope, and what was deliberately left alone</span></li>
+                <li><span class="mark">—</span><span>The request that proved the finding</span></li>
+                <li><span class="mark">—</span><span>What an attacker could have reached</span></li>
+                <li><span class="mark">—</span><span>The fix, and how long it took</span></li>
+              </ul>
+            </div>
+            <div>
+              <hr class="rule" />
+              <h3 class="mt-4">Where they land</h3>
+              <p class="small muted">
+                Studies are written as markdown in the
+                <a class="accent" href="https://github.com/syrah-oss/.github">.github</a> repository,
+                so they stay readable in the repo and on this page.
+              </p>
+              <a class="btn btn-sm btn-secondary" href="https://github.com/syrah-oss/.github/tree/main/case-studies"
+                >Case study index</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-foot">
+      <div class="container">
+        <div class="foot-grid">
+          <div>
+            <a class="brand" href="#main" aria-label="Syrah open source, home">
+              <img class="brand-mark" src="assets/img/syrah-mark.svg" alt="" width="30" height="30" />
+              <span>Syrah</span>
+            </a>
+            <p class="foot-note">
+              Open source from Syrah, an independent security studio in Belgium. Your service,
+              attacked continuously.
+            </p>
+          </div>
+          <div>
+            <h4>Tools</h4>
+            <div class="foot-links">
+              <a href="https://github.com/syrah-oss">GitHub organisation</a>
+              <a href="https://github.com/syrah-oss/wifikit">wifikit</a>
+              <a href="https://github.com/syrah-oss/agentic-inbox">agentic-inbox</a>
+            </div>
+          </div>
+          <div>
+            <h4>Syrah</h4>
+            <div class="foot-links">
+              <a href="https://syrah.dev">syrah.dev</a>
+              <a href="https://github.com/syrah-oss/.github/tree/main/case-studies">Case studies</a>
+              <a href="mailto:security@syrah.dev">security@syrah.dev</a>
+            </div>
+          </div>
+        </div>
+        <div class="foot-bottom">
+          <span>&copy; 2026 Syrah</span>
+          <span class="nowrap">Mark and type &mdash; Syrah</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
