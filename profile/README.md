@@ -2,7 +2,7 @@
 
 # Syrah
 
-**Your service, attacked continuously.**
+**Get attacked before someone else does.**
 
 Not a scanner. An agentic attacker — we test your service the way a real
 adversary would, so "safe" means it survived, not that a tool said so.
